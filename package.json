@@ -1,0 +1,22 @@
+{
+  "name": "lodash-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robpwatkins/Lodash-Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robpwatkins/Lodash-Practice/issues"
+  },
+  "homepage": "https://github.com/robpwatkins/Lodash-Practice#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
