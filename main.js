@@ -53,7 +53,7 @@ function drop(arr, num) {
   return _.drop(arr, num);
 }
 
-console.log(drop(numsInOrder, 2));
+console.log(drop(numsInOrder, 1));
 
 
 
@@ -75,9 +75,9 @@ if (typeof describe === 'function') {
 if (typeof describe === 'function') {
   describe('reverse', () => {
     it('should return an array in reverse order of its original', () => {
-      const array = reverse(numsInOrder);
+      const array = reverse(aFewLetters);
       assert.deepEqual(
-        array, [4, 3, 2, 1] 
+        array, ['c', 'b', 'a'] 
       );
     });
   });
@@ -113,13 +113,13 @@ if (typeof describe === 'function') {
 
 if (typeof describe === 'function') {
   describe('drop', () => {
-    it('should return an array with items specified amount of elements removed from front', () => {
-      const array = shuffle(numsInOrder);
-      assert.notEqual(
-        array, [4, 1, 2, 3]
+    it('should return an array with specified amount of elements removed from front', () => {
+      const array = drop(numsInOrder, 1);
+      assert.deepEqual(
+        array, [2, 3, 4]
       );
     });
   });
 } else {
-  console.log(shuffle(aFewNums));
+  console.log(drop(numsInOrder));
 }
